@@ -28,3 +28,10 @@ plot(t2,amplitude2);
 title("nyquist criterion");
 xlabel("time");
 ylabel("amplitude");
+grid on;
+fs3=20*fm;
+t3=0:1/(fs3):cy/fm;
+amplitude3=am*sin(2*pi*fm*t3);
+subplot(224);
+plot(t3,amplitude3);
+title("over 
